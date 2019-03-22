@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"/>
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="#12345"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Database Connection Pool Sizing"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author : Zyngaro" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nov 11, 2018"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.like.LikeButton
+                android:id="@+id/favorite"
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:icon_type="heart">
+            </com.like.LikeButton>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
